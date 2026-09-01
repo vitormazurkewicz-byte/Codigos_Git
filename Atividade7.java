@@ -1,25 +1,28 @@
-algoritmo "Exercicio7"
+import java.util.Scanner;
 
-var
-   base, altura: real
-   area, perimetro, diagonal: real
+public class Exercicio7 {
 
-inicio
+    public static void main(String[] args) {
 
-   escreva("Digite a base do retangulo: ")
-   leia(base)
+        Scanner entrada = new Scanner(System.in);
 
-   escreva("Digite a altura do retangulo: ")
-   leia(altura)
+        double base;
+        double altura;
+        double area;
+        double perimetro;
 
-   area <- base * altura
+        System.out.print("Digite a base: ");
+        base = entrada.nextDouble();
 
-   perimetro <- 2 * (base + altura)
+        System.out.print("Digite a altura: ");
+        altura = entrada.nextDouble();
 
-   diagonal <- raizq(base ^ 2 + altura ^ 2)
+        area = base * altura;
 
-   escreval("Area: ", area)
-   escreval("Perimetro: ", perimetro)
-   escreval("Diagonal: ", diagonal)
+        perimetro = 2 * (base + altura);
 
-fimalgoritmo
+        System.out.println("Area: " + area);
+        System.out.println("Perimetro: " + perimetro);
+
+    }
+}
