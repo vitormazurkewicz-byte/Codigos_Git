@@ -23,6 +23,6 @@ public class Exercicio1 {
                 ", idade: " + idade +
                 " anos e altura: " + altura + " metros.");
 
-        scanner.close();
+        
     }
 }
