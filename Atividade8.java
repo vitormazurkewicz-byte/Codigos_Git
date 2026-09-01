@@ -1,18 +1,24 @@
-algoritmo "Exercicio8"
+import java.util.Scanner;
 
-var
-   celsius, fahrenheit, kelvin: real
+public class Exercicio8 {
 
-inicio
+    public static void main(String[] args) {
 
-   escreva("Digite a temperatura em Celsius: ")
-   leia(celsius)
+        Scanner entrada = new Scanner(System.in);
 
-   fahrenheit <- (celsius * 9 / 5) + 32
+        double celsius;
+        double fahrenheit;
+        double kelvin;
 
-   kelvin <- celsius + 273.15
+        System.out.print("Digite a temperatura em Celsius: ");
+        celsius = entrada.nextDouble();
 
-   escreval("Temperatura em Fahrenheit: ", fahrenheit)
-   escreval("Temperatura em Kelvin: ", kelvin)
+        fahrenheit = (celsius * 9 / 5) + 32;
 
-fimalgoritmo
+        kelvin = celsius + 273.15;
+
+        System.out.println("Fahrenheit: " + fahrenheit);
+        System.out.println("Kelvin: " + kelvin);
+
+    }
+}
