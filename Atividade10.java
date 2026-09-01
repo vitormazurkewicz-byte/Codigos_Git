@@ -1,25 +1,29 @@
-algoritmo "Exercicio10"
+import java.util.Scanner;
 
-var
-   media: real
+public class Exercicio10 {
 
-inicio
+    public static void main(String[] args) {
 
-   escreva("Digite a media final: ")
-   leia(media)
+        Scanner entrada = new Scanner(System.in);
 
-   se media >= 7 entao
+        double media;
 
-      escreval("Aluno APROVADO.")
+        System.out.print("Digite a media: ");
+        media = entrada.nextDouble();
 
-   senao
+        if (media >= 7) {
 
-      se media >= 5 entao
-         escreval("Aluno em RECUPERACAO.")
-      senao
-         escreval("Aluno REPROVADO.")
-      fimse
+            System.out.println("Aprovado");
 
-   fimse
+        } else if (media >= 5) {
 
-fimalgoritmo
+            System.out.println("Recuperacao");
+
+        } else {
+
+            System.out.println("Reprovado");
+
+        }
+
+    }
+}
