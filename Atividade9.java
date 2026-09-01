@@ -1,17 +1,25 @@
-algoritmo "Exercicio9"
+import java.util.Scanner;
 
-var
-   numero: inteiro
+public class Exercicio9 {
 
-inicio
+    public static void main(String[] args) {
 
-   escreva("Digite um numero: ")
-   leia(numero)
+        Scanner entrada = new Scanner(System.in);
 
-   se numero mod 2 = 0 entao
-      escreval("O numero e PAR.")
-   senao
-      escreval("O numero e IMPAR.")
-   fimse
+        int numero;
 
-fimalgoritmo
+        System.out.print("Digite um numero: ");
+        numero = entrada.nextInt();
+
+        if (numero % 2 == 0) {
+
+            System.out.println("Par");
+
+        } else {
+
+            System.out.println("Impar");
+
+        }
+
+    }
+}
