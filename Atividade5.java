@@ -1,25 +1,32 @@
-algoritmo "Exercicio5"
+import java.util.Scanner;
 
-var
-   valorHora, horasMes: real
-   salarioBruto, inss, salarioLiquido: real
+public class Exercicio5 {
 
-inicio
+    public static void main(String[] args) {
 
-   escreva("Digite o valor da hora trabalhada: ")
-   leia(valorHora)
+        Scanner entrada = new Scanner(System.in);
 
-   escreva("Digite a quantidade de horas trabalhadas: ")
-   leia(horasMes)
+        double valorHora;
+        double horas;
+        double salario;
+        double inss;
+        double liquido;
 
-   salarioBruto <- valorHora * horasMes
+        System.out.print("Valor da hora: ");
+        valorHora = entrada.nextDouble();
 
-   inss <- salarioBruto * 8 / 100
+        System.out.print("Horas trabalhadas: ");
+        horas = entrada.nextDouble();
 
-   salarioLiquido <- salarioBruto - inss
+        salario = valorHora * horas;
 
-   escreval("Salario bruto: R$ ", salarioBruto)
-   escreval("Desconto INSS: R$ ", inss)
-   escreval("Salario liquido: R$ ", salarioLiquido)
+        inss = salario * 0.08;
 
-fimalgoritmo
+        liquido = salario - inss;
+
+        System.out.println("Salario bruto: " + salario);
+        System.out.println("INSS: " + inss);
+        System.out.println("Salario liquido: " + liquido);
+
+    }
+}
