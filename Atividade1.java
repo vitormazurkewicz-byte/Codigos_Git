@@ -1,21 +1,28 @@
-algoritmo "Exercicio1"
+import java.util.Scanner;
 
-var
-   nome: caractere
-   idade: inteiro
-   altura: real
+public class Exercicio1 {
 
-inicio
+    public static void main(String[] args) {
 
-   escreva("Digite seu nome: ")
-   leia(nome)
+        Scanner scanner = new Scanner(System.in);
 
-   escreva("Digite sua idade: ")
-   leia(idade)
+        String nome;
+        int idade;
+        double altura;
 
-   escreva("Digite sua altura: ")
-   leia(altura)
+        System.out.print("Digite seu nome: ");
+        nome = scanner.nextLine();
 
-   escreval("Nome: ", nome, ", idade: ", idade, " anos e altura: ", altura, " metros.")
+        System.out.print("Digite sua idade: ");
+        idade = scanner.nextInt();
 
-fimalgoritmo
+        System.out.print("Digite sua altura: ");
+        altura = scanner.nextDouble();
+
+        System.out.println("Nome: " + nome +
+                ", idade: " + idade +
+                " anos e altura: " + altura + " metros.");
+
+        scanner.close();
+    }
+}
