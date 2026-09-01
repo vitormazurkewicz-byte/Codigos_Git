@@ -4,25 +4,22 @@ public class Exercicio1 {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
 
         String nome;
         int idade;
         double altura;
 
         System.out.print("Digite seu nome: ");
-        nome = scanner.nextLine();
+        nome = entrada.nextLine();
 
         System.out.print("Digite sua idade: ");
-        idade = scanner.nextInt();
+        idade = entrada.nextInt();
 
         System.out.print("Digite sua altura: ");
-        altura = scanner.nextDouble();
+        altura = entrada.nextDouble();
 
-        System.out.println("Nome: " + nome +
-                ", idade: " + idade +
-                " anos e altura: " + altura + " metros.");
+        System.out.println(nome + " tem " + idade + " anos e " + altura + " metros.");
 
-        
     }
 }
