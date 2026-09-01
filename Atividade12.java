@@ -1,33 +1,32 @@
-algoritmo "Exercicio12"
+import java.util.Scanner;
 
-var
-   consumo: real
-   valorConta: real
+public class Exercicio12 {
 
-inicio
+    public static void main(String[] args) {
 
-   escreva("Digite o consumo mensal em kWh: ")
-   leia(consumo)
+        Scanner entrada = new Scanner(System.in);
 
-   se consumo <= 100 entao
+        double consumo;
+        double valor;
 
-      valorConta <- consumo * 0.50
+        System.out.print("Digite o consumo: ");
+        consumo = entrada.nextDouble();
 
-   senao
+        if (consumo <= 100) {
 
-      se consumo <= 300 entao
+            valor = consumo * 0.50;
 
-         valorConta <- consumo * 0.75
+        } else if (consumo <= 300) {
 
-      senao
+            valor = consumo * 0.75;
 
-         valorConta <- consumo * 1.10
+        } else {
 
-      fimse
+            valor = consumo * 1.10;
 
-   fimse
+        }
 
-   escreval("Consumo: ", consumo, " kWh")
-   escreval("Valor da conta: R$ ", valorConta)
+        System.out.println("Valor da conta: R$ " + valor);
 
-fimalgoritmo
+    }
+}
