@@ -1,18 +1,24 @@
-algoritmo "Exercicio6"
+import java.util.Scanner;
 
-var
-   raio, area, perimetro: real
+public class Exercicio6 {
 
-inicio
+    public static void main(String[] args) {
 
-   escreva("Digite o raio do circulo: ")
-   leia(raio)
+        Scanner entrada = new Scanner(System.in);
 
-   area <- 3.14159 * raio ^ 2
+        double raio;
+        double area;
+        double perimetro;
 
-   perimetro <- 2 * 3.14159 * raio
+        System.out.print("Digite o raio: ");
+        raio = entrada.nextDouble();
 
-   escreval("Area do circulo: ", area)
-   escreval("Perimetro do circulo: ", perimetro)
+        area = 3.14 * raio * raio;
 
-fimalgoritmo
+        perimetro = 2 * 3.14 * raio;
+
+        System.out.println("Area: " + area);
+        System.out.println("Perimetro: " + perimetro);
+
+    }
+}
