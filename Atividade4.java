@@ -1,25 +1,32 @@
-algoritmo "Exercicio4"
+import java.util.Scanner;
 
-var
-   nota1, nota2, nota3, nota4: real
-   media: real
+public class Exercicio4 {
 
-inicio
+    public static void main(String[] args) {
 
-   escreva("Digite a primeira nota: ")
-   leia(nota1)
+        Scanner entrada = new Scanner(System.in);
 
-   escreva("Digite a segunda nota: ")
-   leia(nota2)
+        double nota1;
+        double nota2;
+        double nota3;
+        double nota4;
+        double media;
 
-   escreva("Digite a terceira nota: ")
-   leia(nota3)
+        System.out.print("Nota 1: ");
+        nota1 = entrada.nextDouble();
 
-   escreva("Digite a quarta nota: ")
-   leia(nota4)
+        System.out.print("Nota 2: ");
+        nota2 = entrada.nextDouble();
 
-   media <- (nota1 + nota2 + nota3 + nota4) / 4
+        System.out.print("Nota 3: ");
+        nota3 = entrada.nextDouble();
 
-   escreval("Media final: ", media)
+        System.out.print("Nota 4: ");
+        nota4 = entrada.nextDouble();
 
-fimalgoritmo
+        media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+        System.out.println("Media: " + media);
+
+    }
+}
