@@ -1,18 +1,21 @@
-algoritmo "Exercicio3"
+import java.util.Scanner;
 
-var
-   reais, cotacao, dolares: real
+public class Exercicio3 {
 
-inicio
+    public static void main(String[] args) {
 
-   escreva("Digite o valor em reais: ")
-   leia(reais)
+        Scanner entrada = new Scanner(System.in);
 
-   escreva("Digite a cotacao do dolar: ")
-   leia(cotacao)
+        double reais;
+        double dolar;
 
-   dolares <- reais / cotacao
+        System.out.print("Digite o valor em reais: ");
+        reais = entrada.nextDouble();
 
-   escreval("Valor em dolar: US$ ", dolares)
+        System.out.print("Digite a cotacao do dolar: ");
+        dolar = entrada.nextDouble();
 
-fimalgoritmo
+        System.out.println("Valor em dolar: " + (reais / dolar));
+
+    }
+}
