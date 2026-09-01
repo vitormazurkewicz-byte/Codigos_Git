@@ -1,20 +1,25 @@
-algoritmo "Exercicio2"
+import java.util.Scanner;
 
-var
-   num1, num2: inteiro
+public class Exercicio2 {
 
-inicio
+    public static void main(String[] args) {
 
-   escreva("Digite o primeiro numero: ")
-   leia(num1)
+        Scanner entrada = new Scanner(System.in);
 
-   escreva("Digite o segundo numero: ")
-   leia(num2)
+        int numero1;
+        int numero2;
 
-   escreval("Soma: ", num1 + num2)
-   escreval("Subtracao: ", num1 - num2)
-   escreval("Produto: ", num1 * num2)
-   escreval("Divisao inteira: ", num1 div num2)
-   escreval("Resto da divisao: ", num1 mod num2)
+        System.out.print("Digite o primeiro numero: ");
+        numero1 = entrada.nextInt();
 
-fimalgoritmo
+        System.out.print("Digite o segundo numero: ");
+        numero2 = entrada.nextInt();
+
+        System.out.println("Soma: " + (numero1 + numero2));
+        System.out.println("Subtracao: " + (numero1 - numero2));
+        System.out.println("Multiplicacao: " + (numero1 * numero2));
+        System.out.println("Divisao: " + (numero1 / numero2));
+        System.out.println("Resto: " + (numero1 % numero2));
+
+    }
+}
