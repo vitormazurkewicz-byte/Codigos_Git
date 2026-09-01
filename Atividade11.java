@@ -1,35 +1,37 @@
-algoritmo "Exercicio11"
+import java.util.Scanner;
 
-var
-   num1, num2, num3: inteiro
+public class Exercicio11 {
 
-inicio
+    public static void main(String[] args) {
 
-   escreva("Digite o primeiro numero: ")
-   leia(num1)
+        Scanner entrada = new Scanner(System.in);
 
-   escreva("Digite o segundo numero: ")
-   leia(num2)
+        int numero1;
+        int numero2;
+        int numero3;
 
-   escreva("Digite o terceiro numero: ")
-   leia(num3)
+        System.out.print("Digite o primeiro numero: ");
+        numero1 = entrada.nextInt();
 
-   se (num1 > num2) e (num1 > num3) entao
+        System.out.print("Digite o segundo numero: ");
+        numero2 = entrada.nextInt();
 
-      escreval("O maior numero e: ", num1)
+        System.out.print("Digite o terceiro numero: ");
+        numero3 = entrada.nextInt();
 
-   senao
+        if (numero1 > numero2 && numero1 > numero3) {
 
-      se (num2 > num1) e (num2 > num3) entao
+            System.out.println("Maior: " + numero1);
 
-         escreval("O maior numero e: ", num2)
+        } else if (numero2 > numero3) {
 
-      senao
+            System.out.println("Maior: " + numero2);
 
-         escreval("O maior numero e: ", num3)
+        } else {
 
-      fimse
+            System.out.println("Maior: " + numero3);
 
-   fimse
+        }
 
-fimalgoritmo
+    }
+}
