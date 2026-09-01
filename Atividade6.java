@@ -1,25 +1,18 @@
-algoritmo "Exercicio5"
+algoritmo "Exercicio6"
 
 var
-   valorHora, horasMes: real
-   salarioBruto, inss, salarioLiquido: real
+   raio, area, perimetro: real
 
 inicio
 
-   escreva("Digite o valor da hora trabalhada: ")
-   leia(valorHora)
+   escreva("Digite o raio do circulo: ")
+   leia(raio)
 
-   escreva("Digite a quantidade de horas trabalhadas: ")
-   leia(horasMes)
+   area <- 3.14159 * raio ^ 2
 
-   salarioBruto <- valorHora * horasMes
+   perimetro <- 2 * 3.14159 * raio
 
-   inss <- salarioBruto * 8 / 100
-
-   salarioLiquido <- salarioBruto - inss
-
-   escreval("Salario bruto: R$ ", salarioBruto)
-   escreval("Desconto INSS: R$ ", inss)
-   escreval("Salario liquido: R$ ", salarioLiquido)
+   escreval("Area do circulo: ", area)
+   escreval("Perimetro do circulo: ", perimetro)
 
 fimalgoritmo
